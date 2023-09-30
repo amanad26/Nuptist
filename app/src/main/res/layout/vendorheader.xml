@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:id="@+id/relativelayout"
+            android:layout_height="@dimen/_70sdpq"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/AG_drower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menubaar" />
+
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/AG_drower"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdpq"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_regular"
+                        android:maxLines="2"
+                        android:text="Welcome"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdpq" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_medium"
+                        android:maxLines="2"
+                        android:text="John Deo"
+                        android:textColor="@color/white"
+                        android:textFontWeight="800"
+                        android:textSize="@dimen/_18sdpq" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/AG_notification"
+                    android:layout_marginRight="@dimen/_20sdpq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdpq"
+                        android:layout_marginRight="@dimen/_20sdpq"
+                        android:src="@drawable/ic_notifications_black_24dp"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="@dimen/_22sdpq"
+                        android:layout_height="@dimen/_22sdpq"
+                        android:layout_marginLeft="@dimen/_10sdpq"
+                        android:layout_marginTop="@dimen/_5sdpq"
+                        android:background="@drawable/redcirclecircle"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:paddingBottom="@dimen/_5sdpq"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdpq" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/currentlication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_home_profile"
+                android:layout_width="@dimen/_40sdpq"
+                android:layout_height="@dimen/_40sdpq"
+                android:layout_marginStart="@dimen/_20sdpq"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:layout_marginEnd="@dimen/_20sdpq"
+                android:layout_marginBottom="@dimen/_10sdpq"
+                android:src="@drawable/user_icon"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/user_home_profile"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdpq"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="User Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdpq" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/AG_carts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:layout_marginRight="@dimen/_20sdpq"
+                    android:src="@drawable/notificartion" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_22sdpq"
+                    android:layout_height="@dimen/_22sdpq"
+                    android:layout_marginLeft="@dimen/_10sdpq"
+                    android:layout_marginTop="@dimen/_5sdpq"
+                    android:background="@drawable/circlecircle"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/_5sdpq"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdpq" />
+
+
+                <ImageView
+                    android:layout_toRightOf="@id/AG_carts"
+                    android:layout_width="@dimen/_20sdpq"
+                    android:layout_height="@dimen/_20sdpq"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:src="@drawable/qr"
+                    android:layout_marginRight="@dimen/_20sdpq"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

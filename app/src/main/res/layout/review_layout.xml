@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/_5sdpq"
+        android:layout_marginEnd="@dimen/_5sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdpq">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdpq"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_15sdpq"
+            android:layout_marginTop="@dimen/_10sdpq"
+            app:cardCornerRadius="@dimen/_4sdpq"
+            app:cardElevation="@dimen/_1sdpq">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_6sdpq"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_3sdpq"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/some_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingTop="@dimen/_1sdpq"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textFontWeight="500"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="@dimen/_50sdpq"
+            android:layout_height="@dimen/_50sdpq"
+            android:src="@drawable/profile2" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdpq"
+            android:layout_marginTop="@dimen/_3sdpq"
+            android:layout_toEndOf="@id/profile_pic"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Jenifer G"
+            android:textColor="#101113"
+            android:textFontWeight="500"
+            android:textSize="@dimen/_14sdpq" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignStart="@id/name"
+            android:layout_marginTop="@dimen/_3sdpq"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="10 January 2022"
+            android:textColor="#75828E"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_12sdpq" />
+
+        <TextView
+            android:id="@+id/review_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_marginTop="@dimen/_6sdpq"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s stand..."
+            android:textColor="#75828E"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_12sdpq" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".VendorHomeEventsFragment">
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdpq"
+        android:id="@+id/progress_bar"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vendor_package_recyclerview"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:visibility="gone"
+        android:id="@+id/no_data"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="No Booking Packages Found..!"
+        android:textColor="@color/gray"
+        android:textFontWeight="600"
+        android:textSize="@dimen/_16sdpq" />
+
+</LinearLayout>

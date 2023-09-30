@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_5sdpq"
+        android:layout_marginVertical="@dimen/_2sdpq"
+        app:cardCornerRadius="@dimen/_5sdpq"
+        app:cardElevation="@dimen/_5sdpq">
+
+        <LinearLayout
+            android:padding="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_100sdpq"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_corner_radius="@dimen/_10sdpq"
+                    android:layout_width="@dimen/_80sdpq"
+                    android:layout_height="@dimen/_80sdpq"
+                    android:src="@drawable/ic_pic1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/pcakge_image"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_5sdpq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/package_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="600"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_2sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Original Price"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sdpq"/>
+
+                    <TextView
+                        android:id="@+id/min_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="@dimen/_5sdpq"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdpq"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Price"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sdpq"/>
+
+                    <TextView
+                        android:id="@+id/max_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="@dimen/_5sdpq"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdpq"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+      <View
+          android:layout_marginTop="@dimen/_5sdpq"
+          android:layout_marginBottom="@dimen/_2sdpq"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_1sdpq"
+          android:background="@color/gray"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="@dimen/_5sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:id="@+id/user_pic"
+            app:civ_border_width="@dimen/_1sdpq"
+            app:civ_border_color="#E1E1E1"
+            android:layout_height="@dimen/_65sdpq"
+            android:src="@drawable/loading"/>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_8sdpq"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:maxLength="100"
+                android:ellipsize="end"
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_16sdpq"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_3sdpq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/last_msg"
+                    android:layout_weight="1.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:maxLength="50"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_13sdpq"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"/>
+
+
+                <TextView
+                    android:id="@+id/messag_time"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="end"
+                    android:textSize="@dimen/_9sdpq"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdpq"
+        android:layout_marginBottom="@dimen/_1sdpq"
+        android:background="#E1E1E1"/>
+</LinearLayout>

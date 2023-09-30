@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_homevendor">
+
+    <fragment
+        android:id="@+id/navigation_homevendor"
+        android:name="com.Nuptist.mainscreens.HomeUserFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_user" />
+
+
+    <fragment
+        android:id="@+id/navigation_sale"
+        android:name="com.Nuptist.mainscreens.FavoriteFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_favorite" />
+
+
+    <fragment
+        android:id="@+id/navigation_purchase"
+        android:name="com.Nuptist.mainscreens.PurchaseFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_purchase" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.Nuptist.mainscreens.MoreFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_more" />
+
+</navigation>

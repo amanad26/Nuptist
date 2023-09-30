@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/_15sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="@dimen/_5sdpq"
+            android:id="@+id/add_vendor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/blackk"
+            android:text="Select Vendor"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdpq"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:padding="@dimen/_5sdpq"
+            android:id="@+id/viewProfile_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/blackk"
+            android:text="View Profile"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdpq"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

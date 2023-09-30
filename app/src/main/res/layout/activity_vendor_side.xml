@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorSideActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdpq"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdpq"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_left_arrow" />
+
+
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdpq"
+            app:mcv_arrowColor="@color/colorPrimary"
+            android:outlineAmbientShadowColor="@color/colorPrimary"
+            android:background="@drawable/shape_edittext15r"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="@color/colorPrimary" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdpq"
+            android:background="@drawable/shape_edittext15r"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdpq">
+
+
+            <TextView
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_6sdpq"
+                android:drawableRight="@drawable/ic_calender2"
+                android:fontFamily="@font/poppins_bold"
+                android:text="22 - 25 October 2022"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_14sdpq" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/_10sdpq"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:background="#D9E6F2" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_6sdpq"
+                android:layout_marginTop="@dimen/_15sdpq"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Schedule detail Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand..."
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdpq" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdpq"
+            android:background="@drawable/shape_edittext15r"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdpq">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_6sdpq"
+                android:drawableRight="@drawable/ic_calender2"
+                android:fontFamily="@font/poppins_bold"
+                android:text="4 - 6 November 2022"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_14sdpq" />
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/_10sdpq"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:background="#D9E6F2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_6sdpq"
+                android:layout_marginTop="@dimen/_15sdpq"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Schedule detail Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand..."
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdpq" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>

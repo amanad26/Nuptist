@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".venue.UpdateVenueImagesActivity">
+
+
+    <ScrollView
+        android:layout_above="@id/update_linear"
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_50sdpq"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:src="@drawable/ic_left_arrow" />
+
+                <TextView
+                    android:layout_marginStart="@dimen/_10sdpq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Update Venue Images"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#BDBDBD" />
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="30dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/galeery_1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/front_side_image"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 1"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/gallery_2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 2"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/gallery_3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 3"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/gallery_4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 4"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/gallery_5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/front_side_image"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 5"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/gallery_6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 6"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dot_dot_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="@dimen/_10sdpq"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/gallery_7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_nature_svg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Gallery 7 "
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </GridLayout>
+
+
+            <!--    <LinearLayout-->
+            <!--        android:gravity="center_horizontal"-->
+            <!--        android:padding="5dp"-->
+            <!--        android:layout_marginTop="@dimen/_10sdpq"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:orientation="horizontal">-->
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:layout_marginStart="5dp"-->
+            <!--            android:padding="5dp"-->
+            <!--            android:background="@drawable/dot_dot_bg"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="vertical">-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/_100sdpq"-->
+            <!--                android:layout_height="@dimen/_70sdpq"-->
+            <!--                android:src="@drawable/ic_nature_svg"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--               />-->
+            <!--            <TextView-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/front_side_image"-->
+            <!--                android:textSize="14sp"/>-->
+
+            <!--        </LinearLayout>-->
+            <!--        <LinearLayout-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:layout_marginStart="10dp"-->
+            <!--            android:padding="5dp"-->
+            <!--            android:background="@drawable/dot_dot_bg"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="vertical">-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/_100sdpq"-->
+            <!--                android:layout_height="@dimen/_70sdpq"-->
+            <!--                android:src="@drawable/ic_nature_svg"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--                />-->
+            <!--            <TextView-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/left_side_image"-->
+            <!--                android:textSize="14sp"/>-->
+
+            <!--        </LinearLayout>-->
+            <!--        <LinearLayout-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:layout_marginStart="10dp"-->
+            <!--            android:padding="5dp"-->
+            <!--            android:background="@drawable/dot_dot_bg"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="vertical">-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/_100sdpq"-->
+            <!--                android:layout_height="@dimen/_70sdpq"-->
+            <!--                android:src="@drawable/ic_nature_svg"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--                />-->
+            <!--            <TextView-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/right_side_image"-->
+            <!--                android:textSize="14sp"/>-->
+
+            <!--        </LinearLayout>-->
+
+            <!--    </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/update_linear"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            >
+
+            <TextView
+                android:id="@+id/create_venue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_20sdpq"
+                android:background="@drawable/roundprimary_gb"
+                android:fontFamily="@font/product_snas_regular"
+                android:gravity="center"
+                android:padding="@dimen/_15sdpq"
+                android:text="@string/update_images"
+                android:textColor="@color/white2"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_14sdpq" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdpq">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/close_calender"
+            android:layout_width="@dimen/_40sdpq"
+            android:layout_height="@dimen/_40sdpq"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/_10sdpq"
+            android:layout_marginTop="@dimen/_5sdpq"
+            android:src="@drawable/ic_close"/>
+
+<!--        <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView-->
+<!--            android:id="@+id/calendar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            custom:disable_date_color="#ABABAB"-->
+<!--            custom:header_bg="@drawable/calendar_header"-->
+<!--            custom:range_color="#D83973"-->
+<!--            custom:selected_date_circle_color="#D83973"-->
+<!--            custom:title_color="@color/calendar_header_title">-->
+<!--        </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>-->
+<!--  -->
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pagesColor="#FFFFFF"
+            app:type="range_picker"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@id/header"
+        android:id="@+id/confirm_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdpq"
+        android:layout_marginStart="@dimen/_10sdpq"
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:layout_marginBottom="@dimen/_10sdpq"
+        android:layout_weight=".17"
+        android:background="@drawable/custom_bg_btn"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_15sdpq"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

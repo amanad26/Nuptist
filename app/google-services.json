@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "597328044987",
+    "firebase_url": "https://nuptist-e6c83-default-rtdb.firebaseio.com",
+    "project_id": "nuptist-e6c83",
+    "storage_bucket": "nuptist-e6c83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597328044987:android:876f5e304fdaa745599a9e",
+        "android_client_info": {
+          "package_name": "com.Nuptist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597328044987-cmd40ffgmebi1ponkiofdinc40vbhg3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Nuptist",
+            "certificate_hash": "f16ac2a140993ea4a672ed80cf890d25acd991fb"
+          }
+        },
+        {
+          "client_id": "597328044987-mcjka5a0eslul9mkga0lhab51jk0v8hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD20yoc_RyUht21v2YXLnMZdU2D2xeHH_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597328044987-mcjka5a0eslul9mkga0lhab51jk0v8hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

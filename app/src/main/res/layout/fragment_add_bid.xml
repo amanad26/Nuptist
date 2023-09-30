@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".VendorPackages.AddBidFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bid_bg"
+        android:padding="@dimen/_10sdpq"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/minimum_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdpq"
+            android:background="@drawable/shape_edittext15r"
+            android:fontFamily="@font/product_snas_regular"
+            android:hint="Minimum Amount"
+            android:textFontWeight="400"
+            android:inputType="number"
+            android:padding="@dimen/_15sdpq"
+            android:textColor="@color/bold_black"
+            android:textColorHint="@color/bold_black"
+            android:textSize="@dimen/_14sdpq" />
+
+
+        <EditText
+            android:id="@+id/maximum_amoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdpq"
+            android:background="@drawable/shape_edittext15r"
+            android:fontFamily="@font/product_snas_regular"
+            android:hint="Maximum Amount"
+            android:textFontWeight="400"
+            android:inputType="number"
+            android:padding="@dimen/_15sdpq"
+            android:textColor="@color/bold_black"
+            android:textColorHint="@color/bold_black"
+            android:textSize="@dimen/_14sdpq" />
+
+
+
+
+        <TextView
+            android:id="@+id/update_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdpq"
+            android:background="@drawable/shape_edittext15r"
+            android:drawableRight="@drawable/ic_calender2"
+            android:fontFamily="@font/product_snas_regular"
+            android:hint="28 July 1999"
+            android:inputType="text"
+            android:padding="@dimen/_15sdpq"
+            android:textColor="@color/bold_black"
+            android:textColorHint="@color/bold_black"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_14sdpq" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

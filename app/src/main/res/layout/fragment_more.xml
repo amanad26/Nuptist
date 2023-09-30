@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_50sdpq"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdpq">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile1"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Albert Romans"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile2"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Lewis Hammilton"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Fotographer"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile3"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Jonathan Rea"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/usersss"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Sylvia Tika"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile4"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Cristian Hikam"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile5"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Johan James"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/usersss"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Sylvia Tika"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile1"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Albert Romans"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:background="@drawable/shape_edittext10r"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdpq">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_60sdpq"
+                android:layout_marginRight="@dimen/_20sdpq"
+                android:src="@drawable/profile2"
+                app:tint="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Sylvia Tika"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Event Leader"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_13sdpq"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

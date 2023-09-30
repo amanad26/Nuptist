@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdpq"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:src="@drawable/ic_left_arrow" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Search Venue"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_20sdpq" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdpq"
+        android:layout_marginBottom="@dimen/_10sdpq"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/search_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdpq"
+            android:background="@drawable/shape_edittext"
+            android:drawableRight="@drawable/ic_search_svg"
+            android:fontFamily="@font/product_snas_regular"
+            android:hint="Search..."
+            android:padding="@dimen/_15sdpq"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_regular"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_15sdpq" />
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_15sdpq"
+                android:background="@drawable/round3_gb"
+                android:fontFamily="@font/product_snas_regular"
+                android:gravity="center"
+                android:padding="@dimen/_15sdpq"
+                android:text="Search Package"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_19sdpq" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

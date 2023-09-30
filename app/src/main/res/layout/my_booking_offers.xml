@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_5sdpq"
+        android:layout_marginEnd="@dimen/_5sdpq"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:layout_height="@dimen/_80sdpq"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="@dimen/_60sdpq"
+            android:layout_marginLeft="@dimen/_8sdpq"
+            app:cardCornerRadius="@dimen/_5sdpq">
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/offer_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_10sdpq"
+            android:layout_marginTop="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdpq"
+            android:layout_marginEnd="@dimen/_10sdpq"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/offter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Venue"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdpq" />
+
+            <TextView
+                android:id="@+id/offer_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5sdpq"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rs. 200,000"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdpq" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

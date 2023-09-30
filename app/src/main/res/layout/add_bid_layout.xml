@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent_layout"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bid_bg"
+            android:padding="@dimen/_10sdpq"
+            android:orientation="vertical">
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/minimum_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdpq"
+                android:background="@drawable/shape_edittext15r"
+                android:fontFamily="@font/product_snas_regular"
+                android:hint="Minimum Amount"
+                android:textFontWeight="400"
+                android:inputType="number"
+                android:padding="@dimen/_15sdpq"
+                android:textColor="@color/bold_black"
+                android:textColorHint="@color/bold_black"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <EditText
+                android:id="@+id/maximum_amoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdpq"
+                android:background="@drawable/shape_edittext15r"
+                android:fontFamily="@font/product_snas_regular"
+                android:hint="Maximum Amount"
+                android:textFontWeight="400"
+                android:inputType="number"
+                android:padding="@dimen/_15sdpq"
+                android:textColor="@color/bold_black"
+                android:textColorHint="@color/bold_black"
+                android:textSize="@dimen/_14sdpq" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/update_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdpq"
+                android:background="@drawable/shape_edittext15r"
+                android:drawableRight="@drawable/ic_calender2"
+                android:fontFamily="@font/product_snas_regular"
+                android:hint="28 July 1999"
+                android:inputType="text"
+                android:padding="@dimen/_15sdpq"
+                android:textColor="@color/bold_black"
+                android:textColorHint="@color/bold_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/terms_and_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingHorizontal="@dimen/_5sdpq"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/terms_condition_tv"
+                    android:text="Accept Terms And Conditions"/>
+
+
+            </LinearLayout>
+
+
+
+       <LinearLayout
+           android:layout_marginTop="@dimen/_20sdpq"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/add_bid_btn"
+               android:layout_marginTop="@dimen/_20sdpq"
+               style="@style/Widget.Neumorph.Button"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_70sdpq"
+               app:neumorph_backgroundColor="@color/colorPrimary"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent" >
+
+               <TextView
+                   android:id="@+id/signup_submit"
+                   android:gravity="center"
+                   android:fontFamily="@font/product_snas_regular"
+                   android:layout_gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="@string/add_bid"
+                   android:textSize="@dimen/_17sdpq"
+                   android:textStyle="bold"
+                   android:textColor="@color/white"/>
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

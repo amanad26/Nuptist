@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_5sdpq"
+        android:layout_marginEnd="@dimen/_5sdpq"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:gravity="center"
+        android:layout_height="@dimen/_80sdpq"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="@dimen/_60sdpq"
+            android:layout_marginLeft="@dimen/_8sdpq"
+            app:cardCornerRadius="@dimen/_5sdpq">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                app:riv_corner_radius="@dimen/_10sdpq"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdpq"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/offter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Venue"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdpq" />
+
+
+
+
+            <TextView
+                android:id="@+id/offer_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5sdpq"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rs. 200,000"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdpq" />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/_15sdpq"
+                android:gravity="center">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/cancle_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdpq"
+                    android:paddingHorizontal="@dimen/_15sdpq"
+                    android:background="@drawable/cancle_background"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/_10sdpq"
+                    android:text="Cancel"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/add_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdpq"
+                    android:paddingHorizontal="@dimen/_15sdpq"
+                    android:background="@drawable/custom_bg_btn"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/_10sdpq"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

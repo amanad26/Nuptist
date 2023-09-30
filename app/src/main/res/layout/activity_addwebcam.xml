@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AddwebCameActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdpq">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="@dimen/_10sdpq"
+            android:src="@drawable/ic_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Send Feedback"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_16sdpq" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdpq"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdpq"
+                        android:src="@drawable/support" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:rating="0"
+                        android:progressTint="@color/colorPrimary"
+                        android:progressBackgroundTint="#CFCFCF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rating_bar"/>
+
+                    <EditText
+                        android:id="@+id/et_query"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdpq"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:background="@drawable/edit_background"
+                        android:drawablePadding="@dimen/_10sdpq"
+                        android:focusable="true"
+                        android:gravity="top|start"
+                        android:hint="Type your message here ...."
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:isScrollContainer="true"
+                        android:overScrollMode="always"
+                        android:padding="@dimen/_10sdpq"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:windowSoftInputMode="stateAlwaysVisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/_10sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_30sdpq"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg_btn"
+                        android:text="Submit"
+                        android:gravity="center"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

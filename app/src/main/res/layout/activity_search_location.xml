@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchLocationActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </fragment>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/marker_img"
+        android:layout_width="@dimen/_50sdpq"
+        android:layout_height="@dimen/_50sdpq"
+        android:layout_gravity="center"
+        android:translationY="-18dp"
+        app:tint="@color/red"
+        app:srcCompat="@drawable/location"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:visibility="gone"
+            app:mt_speechMode="false"
+            app:mt_hint="Search a Origin"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            android:layout_margin="5dp"
+            app:mt_navIconEnabled="false"
+            android:elevation="5dp"
+            android:outlineProvider="bounds"
+            app:mt_placeholder="Search a Origin"/>
+
+<!--        <com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--            app:mt_speechMode="true"-->
+<!--            app:mt_hint="Search a Destination"-->
+<!--            app:mt_maxSuggestionsCount="10"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/destination"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:textCursorDrawable="@drawable/cursor_color"-->
+<!--            android:elevation="5dp"-->
+<!--            app:mt_textCursorTint="@color/black"-->
+<!--            app:mt_placeholder="Search a Destination"/>-->
+
+<!--            style="@style/MaterialSearchBarLight"-->
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            app:mt_speechMode="true"
+            app:mt_hint="Search Location"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            app:mt_textCursorTint="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/destination"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/confirm_location_linear"
+        android:background="@drawable/location_bottom_bg"
+        android:layout_marginBottom="@dimen/_1sdpq"
+        android:padding="@dimen/_11sdpq"
+        android:layout_marginHorizontal="@dimen/_3sdpq"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Location "
+            android:padding="@dimen/_5sdpq"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdpq"
+            />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

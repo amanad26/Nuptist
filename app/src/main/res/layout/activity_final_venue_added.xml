@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F9FF"
+    tools:context=".FinalVenueAddedActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdpq">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:src="@drawable/ic_left_arrow" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Create Vendor"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_20sdpq" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdpq"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdpq">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_15sdpq"
+                android:background="#D9E6F2" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Add Venue"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_16sdpq" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:fontFamily="@font/product_snas_bold"
+                android:text="Venue Address"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <EditText
+                android:id="@+id/search_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdpq"
+                android:background="@drawable/shape_edittext8r"
+                android:fontFamily="@font/product_snas_regular"
+                android:hint="https.//www.ausdasdg.com"
+                android:inputType="text"
+                android:padding="@dimen/_15sdpq"
+                android:textColor="@color/bold_black"
+                android:textColorHint="@color/bold_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:fontFamily="@font/product_snas_bold"
+                android:text="Guest Capasity"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdpq"
+                android:background="@drawable/shape_edittext8r"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:fontFamily="@font/product_snas_regular"
+                android:hint="400-1600"
+                android:inputType="text"
+                android:padding="@dimen/_15sdpq"
+                android:textColor="@color/bold_black"
+                android:textColorHint="@color/bold_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:fontFamily="@font/product_snas_bold"
+                android:text="Venue Price"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdpq"
+                android:background="@drawable/shape_edittext8r"
+                android:drawableRight="@drawable/ic_rs"
+                android:fontFamily="@font/product_snas_regular"
+                android:hint="200,000"
+                android:inputType="text"
+                android:padding="@dimen/_15sdpq"
+                android:textColor="@color/bold_black"
+                android:textColorHint="@color/bold_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdpq"
+                app:cardBackgroundColor="@color/white2"
+                app:cardCornerRadius="@dimen/_15sdpq">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdpq"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdpq"
+                        android:layout_below="@id/header"
+                        android:layout_marginHorizontal="@dimen/_15sdpq"
+                        android:layout_marginTop="@dimen/_25sdpq"
+                        app:cardCornerRadius="@dimen/_18sdpq">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/hottel1">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_20sdpq"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginHorizontal="@dimen/_15sdpq"
+                                android:layout_marginTop="@dimen/_15sdpq"
+                                app:cardCornerRadius="@dimen/_2sdpq">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginHorizontal="@dimen/_6sdpq"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginHorizontal="@dimen/_3sdpq"
+                                        android:src="@drawable/ic_star" />
+
+                                    <TextView
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:paddingTop="@dimen/_1sdpq"
+                                        android:text="4.8"
+                                        android:textColor="@color/dblack"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card1"
+                        android:layout_marginHorizontal="@dimen/_15sdpq"
+                        android:layout_marginTop="@dimen/_15sdpq"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="The Skyline Hotels"
+                                android:textColor="@color/bold_black"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/_14sdpq" />
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end"
+                                android:layout_marginHorizontal="@dimen/_15sdpq"
+                                android:layout_marginBottom="@dimen/_15sdpq"
+                                app:cardBackgroundColor="#E6EDF4"
+                                app:cardCornerRadius="@dimen/_2sdpq"
+                                app:contentPadding="@dimen/_6sdpq">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/share" />
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="@dimen/_5sdpq"
+                            android:layout_marginRight="@dimen/_5sdpq"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Rs. 200,000"
+                            android:textColor="@color/colorPrimary"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/_14sdpq" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/_5sdpq"
+                android:layout_marginRight="@dimen/_5sdpq"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Change Venue"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_12sdpq" />
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/book_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_20sdpq"
+                    android:background="@drawable/roundprimary_gb"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdpq"
+                    android:text="Save Venue"
+                    android:textColor="@color/white2"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/_14sdpq" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

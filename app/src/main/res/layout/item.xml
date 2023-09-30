@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewMain"-->
+<!--        android:layout_width="@dimen/_120sdp"-->
+<!--        android:layout_height="@dimen/_120sdp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/safe"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlimited Likes"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/_22sdpq"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdpq"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send as many Likes as you want"
+        android:fontFamily="@font/roboto_lightitalic"
+        android:textSize="@dimen/_18sdpq"
+        android:textColor="@color/auth_profile_divider_grey"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdpq"/>
+
+
+
+</LinearLayout>

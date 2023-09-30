@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_20sdpq"
+    android:paddingStart="@dimen/_10sdpq"
+    android:paddingEnd="@dimen/_10sdpq"
+    android:paddingTop="@dimen/_10sdpq"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Continue With Facebook "
+        android:fontFamily="@font/product_snas_bold"
+        android:textColor="@color/bold_black"
+        android:textFontWeight="400"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_25sdpq"
+        android:textSize="@dimen/_22sdpq"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdpq"
+        android:layout_marginTop="@dimen/_20sdpq"
+        android:layout_marginLeft="@dimen/_15sdpq"
+        android:layout_marginBottom="@dimen/_30sdpq"
+        android:layout_marginRight="@dimen/_15sdpq"
+        android:drawablePadding="8dp" />
+
+</LinearLayout>

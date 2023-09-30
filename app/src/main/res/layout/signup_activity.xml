@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_170sdp"-->
+<!--        android:scaleType="center"-->
+<!--        android:src="@drawable/sing_up" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/awsome_ph_name"
+                android:layout_marginTop="@dimen/_25sdpq"
+                android:layout_width="@dimen/_300sdpq"
+                android:layout_height="@dimen/_50sdpq"
+                app:borderColor="@color/grayyy"
+                app:borderWidth="2dp"
+                android:layout_gravity="center"
+                app:cornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/pharmacy_name"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="Pharmacy Name"
+            android:textSize="@dimen/_11sdpq"/>
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awsome_mobile_"
+     android:layout_marginTop="@dimen/_8sdpq"
+        android:layout_width="@dimen/_300sdpq"
+        android:layout_height="@dimen/_50sdpq"
+        app:borderColor="@color/grayyy"
+        app:borderWidth="2dp"
+        android:layout_gravity="center"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/mobile_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="@dimen/_11sdpq"/>
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awsome_email_"
+        android:layout_marginTop="@dimen/_8sdpq"
+        android:layout_width="@dimen/_300sdpq"
+        android:layout_height="@dimen/_50sdpq"
+        app:borderColor="@color/grayyy"
+        app:borderWidth="2dp"
+        android:layout_gravity="center"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/email_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_11sdpq"/>
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awsome_pincode_"
+        android:layout_marginTop="@dimen/_8sdpq"
+        android:layout_width="@dimen/_300sdpq"
+        android:layout_height="@dimen/_50sdpq"
+        app:borderColor="@color/grayyy"
+        app:borderWidth="2dp"
+        android:layout_gravity="center"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/pincode_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:textSize="@dimen/_11sdpq"/>
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awsome_ttp"
+        android:layout_marginTop="@dimen/_8sdpq"
+        android:layout_width="@dimen/_300sdpq"
+        android:layout_height="@dimen/_50sdpq"
+        app:borderColor="@color/grayyy"
+        app:borderWidth="2dp"
+        android:layout_gravity="center"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/otp_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="otp"
+            android:inputType="number"
+            android:textSize="@dimen/_11sdpq"/>
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awsome_referal_code_"
+        android:layout_marginTop="@dimen/_8sdpq"
+        android:layout_width="@dimen/_300sdpq"
+        android:layout_height="@dimen/_50sdpq"
+        app:borderColor="@color/grayyy"
+        app:borderWidth="2dp"
+        android:layout_gravity="center"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/referral_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Referral Code"
+            android:textSize="@dimen/_11sdpq"/>
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/signUpButton"
+                android:layout_marginTop="@dimen/_20sdpq"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdpq"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" >
+
+
+                <TextView
+                    android:id="@+id/sing_up_btn"
+                    android:background="@drawable/button_responsive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="continue"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_16sdpq"/>
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tandc1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdpq" />
+
+            <View
+
+                android:layout_width="@dimen/_60sdpq"
+                android:layout_height="@dimen/_2sdpq"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:background="@color/grey_600"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have an account"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdpq" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back to login"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_16sdpq" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

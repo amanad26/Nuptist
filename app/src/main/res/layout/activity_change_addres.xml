@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeAddresActivity">
+
+
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/_5sdpq"
+        android:background="@drawable/shape_edittext8r"                        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear"
+        android:layout_marginBottom="@dimen/_10sdpq"
+        android:id="@+id/fragment_container"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdpq"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_5sdpq"
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:layout_marginStart="@dimen/_20sdpq"
+        android:layout_marginEnd="@dimen/_20sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/address_selectecd"
+            android:padding="@dimen/_15sdpq"
+            android:background="@drawable/shape_edittext8r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:fontFamily="@font/product_snas_bold"
+            android:text="Venue Location (Select on Map)"
+            android:textColor="@color/text_regular"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_14sdpq" />
+
+
+
+        <TextView
+            android:id="@+id/user_current_addres"
+            android:padding="@dimen/_15sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/product_snas_bold"
+            android:text="@string/use_current_location"
+            android:textColor="@color/red"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_14sdpq" />
+
+
+
+
+        <TextView
+            android:id="@+id/create_venue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_20sdpq"
+            android:background="@drawable/roundprimary_gb"
+            android:fontFamily="@font/product_snas_regular"
+            android:gravity="center"
+            android:padding="@dimen/_15sdpq"
+            android:text="Confirm Location"
+            android:textColor="@color/white2"
+            android:textFontWeight="700"
+            android:textSize="@dimen/_14sdpq" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

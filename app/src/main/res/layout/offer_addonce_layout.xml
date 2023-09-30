@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/offer_name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offer name"
+                android:textStyle="normal"
+                android:textSize="@dimen/_18sdpq"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/offer_price"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2253"
+                android:gravity="end"
+                android:textStyle="normal"
+                android:textSize="@dimen/_18sdpq"
+                android:textColor="@color/blackk"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/offer_vendor_name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offer name"
+                android:textStyle="normal"
+                android:visibility="gone"
+                android:textSize="@dimen/_18sdpq"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdpq"
+            android:background="#EDEDED"
+            android:layout_marginTop="@dimen/_2sdpq"
+            android:layout_marginBottom="@dimen/_2sdpq"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

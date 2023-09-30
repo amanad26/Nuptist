@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdpq">
+
+
+        <ImageView
+            android:id="@+id/cut"
+            android:layout_width="@dimen/_25sdpq"
+            android:layout_height="@dimen/_25sdpq"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_5sdpq"
+            android:layout_marginTop="@dimen/_5sdpq"
+            android:layout_marginEnd="@dimen/_5sdpq"
+            android:layout_marginBottom="@dimen/_5sdpq"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdpq"
+            android:layout_toRightOf="@+id/cut"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="@dimen/_10sdpq"
+            android:text="Filter"
+            android:textAlignment="center"
+            android:textColor="#767778"
+            android:textSize="@dimen/_14sdpq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdpq"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="@dimen/_10sdpq"
+            android:text="Reset"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_12sdpq"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_above="@+id/botm"
+        android:id="@+id/layout"
+        android:background="@color/white"
+
+        android:layout_below="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/city_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selected_background"
+                    android:padding="@dimen/_8sdpq"
+                    android:text="City"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_12sdpq">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profession_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ctextbackground"
+                    android:padding="@dimen/_8sdpq"
+                    android:text="Profession"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/_12sdpq">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_3sdpq"
+            android:layout_weight=".6"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/city_recycle"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/profession_recycle"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/botm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_5sdpq"
+        android:layout_marginEnd="@dimen/_5sdpq"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdpq">
+
+        <androidx.cardview.widget.CardView
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdpq"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdpq"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_backgroundColor="@color/yellow">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdpq"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_10sdpq"
+                android:text="Apply Now"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdpq"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

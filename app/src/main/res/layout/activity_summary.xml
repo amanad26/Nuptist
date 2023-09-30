@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity">
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#00F"
+        />
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_left_arrow" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Summary"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_20sdp" />
+
+
+        </RelativeLayout>
+
+
+       <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/product_snas_regular"
+            android:text="Customer Reference"
+            android:textColor="@color/text_regular"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <EditText
+            android:id="@+id/search_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/shape_edittext8r"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:fontFamily="@font/product_snas_regular"
+            android:hint="Kamal’s Wedding"
+            android:inputType="text"
+            android:padding="@dimen/_15sdp"
+            android:textColor="@color/bold_black"
+            android:textColorHint="@color/bold_black"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_14sdp" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/white2"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_below="@id/header"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_pic1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            app:cardCornerRadius="@dimen/_2sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginHorizontal="@dimen/_6sdp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginHorizontal="@dimen/_3sdp"
+                                    android:src="@drawable/ic_star" />
+
+                                <TextView
+                                    android:id="@+id/some_id"
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:paddingTop="@dimen/_1sdp"
+                                    android:text="4.8"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            app:cardCornerRadius="@dimen/_2sdp"
+                            app:contentPadding="@dimen/_6sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_heart" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card1"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="The Skyline Hotels"
+                            android:textColor="@color/bold_black"
+                            android:textFontWeight="600"
+                            android:textSize="@dimen/_20sdp" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="end"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            app:cardBackgroundColor="#E6EDF4"
+                            app:cardCornerRadius="@dimen/_2sdp"
+                            app:contentPadding="@dimen/_6sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/share" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Rs. 200,000"
+                        android:textColor="@color/colorPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:paddingTop="@dimen/_1sdp"
+                            android:text="Nh36, Kathiatali, Assam 782427"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_calender_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:paddingTop="@dimen/_1sdp"
+                            android:text="28 October 2022"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_people" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:paddingTop="@dimen/_1sdp"
+                            android:text="740 People"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@color/grey_400"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Events Number:"
+                            android:textColor="@color/text_regular"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_12sdp"
+                            tools:ignore="MissingConstraints" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="36481"
+                            android:textColor="@color/colorPrimary"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_16sdp"
+                            tools:ignore="MissingConstraints" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Budgetary Quote"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Package Price"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rs. 152,000"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_more"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Basics Ofers"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdp"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+                <View
+                    android:layout_width="@dimen/_1dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/grey_400"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Photography"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="500"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Rs. 20,000"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="600"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Venue"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="500"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Rs. 200,000"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="600"
+                        android:textSize="13sp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableRight="@drawable/ic_more"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Hindu Wedding Special"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14sdp"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+                <View
+                    android:layout_width="@dimen/_1dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/grey_400"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Flower Garland"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="500"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Rs. 20,000"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="600"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Hindu Wedding Ritual"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="500"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Rs. 80,000"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="600"
+                        android:textSize="13sp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/grey_400"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Total"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_14sdp"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:text="Rs. 472,000"
+                    android:textColor="@color/bold_black"
+                    android:textFontWeight="600"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/shape_edittext8r"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Payment Method"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Change Payment"
+                        android:textColor="@color/colorPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/visa"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="**** **** **** 4654"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14sdp"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="26/12"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14sdp"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/custom_bg_rectangle_yello"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:src="@drawable/ic_warn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_15sdp"
+                        android:text="Booking required before14/09/2023(60 days)"
+                        android:textColor="@color/bold_black"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+-->
+    </LinearLayout>

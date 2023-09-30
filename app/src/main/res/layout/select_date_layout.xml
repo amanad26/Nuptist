@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_5sdpq"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/_10sdpq"
+    android:background="@drawable/dialog_bg"
+    android:layout_marginVertical="@dimen/_10sdpq"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/_4sdpq"
+        android:elevation="@dimen/_2sdpq"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dismiss"
+        android:layout_width="@dimen/_40sdpq"
+        android:layout_height="@dimen/_40sdpq"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/ic_circleprimary">
+
+
+        <ImageView
+            android:layout_width="@dimen/_11sdpq"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross_svg" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdpq"
+        android:layout_marginTop="-22dp"
+        android:layout_below="@id/dismiss"
+        android:layout_marginHorizontal="@dimen/_15sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+       <ImageView
+           android:scaleType="fitXY"
+           android:layout_width="wrap_content"
+           android:layout_height="@dimen/_270sdpq"
+           android:src="@drawable/select_date_img"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:layout_marginHorizontal="@dimen/_15sdpq"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Select date before adding ‘Offers’ and ‘Add Ons’"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="500"
+            android:textSize="@dimen/_15sdpq" />
+
+
+        <TextView
+            android:id="@+id/continue_anyway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/_10sdpq"
+            android:paddingHorizontal="@dimen/_40sdpq"
+            android:layout_marginTop="@dimen/_20sdpq"
+            android:background="@drawable/custom_bg_btn"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Go To Set Date"
+            android:layout_marginBottom="@dimen/_15sdpq"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_14sdpq" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

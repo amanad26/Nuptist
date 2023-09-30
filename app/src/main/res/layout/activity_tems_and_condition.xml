@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TemsAndConditionActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdpq"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:src="@drawable/ic_left_arrow" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/terms_and_condition"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_20sdpq" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:id="@+id/privacy_policy_tv"
+        android:gravity="start"
+        android:layout_marginStart="@dimen/_15sdpq"
+        android:layout_marginEnd="@dimen/_15sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdpq" />
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+
+    <LinearLayout
+        android:layout_above="@id/linear_2"
+        android:layout_marginBottom="@dimen/_5sdpq"
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/map_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_marginTop="@dimen/_5sdpq"
+                android:background="@drawable/shape_edittext8r"                        android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map_container"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+       android:padding="@dimen/_10sdpq"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_20sdpq"
+            android:layout_marginEnd="@dimen/_20sdpq"
+            android:layout_marginBottom="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/address_selectecd"
+                android:padding="@dimen/_15sdpq"
+                android:background="@drawable/shape_edittext8r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:fontFamily="@font/product_snas_bold"
+                android:text="Select Address From Map"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <TextView
+            android:id="@+id/create_venue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_20sdpq"
+            android:background="@drawable/roundprimary_gb"
+            android:fontFamily="@font/product_snas_regular"
+            android:gravity="center"
+            android:padding="@dimen/_15sdpq"
+            android:text="@string/confirm_location"
+            android:textColor="@color/white2"
+            android:textFontWeight="700"
+            android:textSize="@dimen/_14sdpq" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

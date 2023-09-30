@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateVendorProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdpq"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:src="@drawable/ic_left_arrow" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Update Vendor"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_20sdpq" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdpq">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_15sdpq"
+                android:fontFamily="@font/product_snas_bold"
+                android:text="Upload your ID card"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14sdpq" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:background="@drawable/dot_dot_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdpq">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_corner_radius="@dimen/_10sdpq"
+                    android:layout_width="@dimen/_100sdpq"
+                    android:layout_height="@dimen/_80sdpq"
+                    android:src="@drawable/ic_nature_svg"
+                    android:id="@+id/id_proof"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdpq"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdpq">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:background="#D9E6F2" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/firstname_name"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/f_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/middle_name"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/m_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/last_name"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/l_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/email"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@+id/email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/service_available"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/service_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/service"
+                    android:inputType="text"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_margin="@dimen/_5sdpq"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_edittext8r"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:clickable="false"
+                        android:id="@+id/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:hint="@string/_1234567890"
+                        android:inputType="number"
+                        android:padding="@dimen/_15sdpq"
+                        android:layout_gravity="center"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/address"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <TextView
+                    android:id="@+id/service_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/service"
+                    android:inputType="text"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/upload_cover_photo"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:background="@drawable/dot_dot_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdpq">
+
+
+                    <ImageView
+                        android:id="@+id/cover_image"
+                        android:layout_width="@dimen/_100sdpq"
+                        android:layout_height="@dimen/_80sdpq"
+                        android:src="@drawable/ic_nature_svg" />
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/upload_user_image"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:background="@drawable/dot_dot_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdpq">
+
+
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="@dimen/_100sdpq"
+                        android:layout_height="@dimen/_80sdpq"
+                        android:src="@drawable/ic_nature_svg" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_20sdpq"
+                    android:background="@drawable/roundprimary_gb"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdpq"
+                    android:text="@string/update_profile"
+                    android:textColor="@color/white2"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

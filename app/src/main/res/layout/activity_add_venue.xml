@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".venue.AddVenueActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdpq"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdpq"
+            android:src="@drawable/ic_left_arrow" />
+
+
+        <TextView
+            android:id="@+id/venue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/add_venue"
+            android:textColor="@color/bold_black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_20sdpq" />
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdpq">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_15sdpq"
+                android:fontFamily="@font/product_snas_bold"
+                android:text="Image"
+                android:textColor="@color/text_regular"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdpq" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_image_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdpq"
+                android:background="@drawable/dot_dot_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdpq">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdpq">
+
+
+                    <ImageView
+                        android:id="@+id/user_image_new"
+                        android:layout_width="@dimen/_50sdpq"
+                        android:layout_height="@dimen/_50sdpq"
+                        android:src="@drawable/ic_nature_svg" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_205sdpq"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_6sdpq"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:text="Browse and choose picture you want to want to make it cover"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/browse_image_registration_proof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_6sdpq"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Browse Picture"
+                    android:textColor="@color/colorPrimary"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12sdpq" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdpq"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdpq">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:background="#D9E6F2" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/venue_name"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/vanue_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="Phone"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="@dimen/_4sdpq"
+                    android:layout_marginEnd="@dimen/_4sdpq"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:layout_marginBottom="@dimen/_5sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/number_county_code"
+                        android:layout_width="@dimen/_80sdpq"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_8sdpq"
+                        android:background="@color/white"
+                        android:outlineSpotShadowColor="@color/black"
+                        app:ccp_arrowColor="@color/gray"
+                        app:ccp_arrowSize="100dp"
+                        app:ccp_contentColor="@color/gray"
+                        app:ccp_flagBorderColor="@color/black"
+                        app:ccp_showArrow="true"
+                        app:ccp_showNameCode="false"
+                        app:ccp_textSize="15dp"
+                        tools:ignore="MissingClass">
+
+                    </com.hbb20.CountryCodePicker>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#E6EDF4">
+
+                    </View>
+
+
+                    <EditText
+                        android:id="@+id/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:hint="@string/_1234567890"
+                        android:inputType="number"
+                        android:padding="@dimen/_15sdpq"
+                        android:maxLength="15"
+                        android:layout_gravity="center"
+                        android:background="@color/trans"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/email"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/venue_price"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/price_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="price"
+                    android:inputType="number"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="Food Price Per Plate"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/price_per_plat_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="price per Plate"
+                    android:inputType="number"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="City"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/service_available"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/service_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/service"
+                    android:inputType="text"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/guest_capacity"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="3"
+                        android:id="@+id/min_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:hint="@string/min"
+                        android:inputType="number"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"/>
+
+
+                    <EditText
+                        android:id="@+id/max_edit"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:hint="@string/max"
+                        android:inputType="number"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/dining_capacityx"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/dining_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:hint="@string/dining_capacityx"
+                    android:inputType="number"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/parking_available_2_wheelers"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/parking_2_wheelers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:inputType="number"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/parking_available_3_wheelers"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+                    <EditText
+                        android:id="@+id/parking_3_wheelers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="number"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/parking_available_4_wheelers"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <EditText
+                    android:id="@+id/parking_4_wheelers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdpq"
+                    android:background="@drawable/shape_edittext8r"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:inputType="number"
+                    android:padding="@dimen/_15sdpq"
+                    android:textColor="@color/bold_black"
+                    android:textColorHint="@color/ltextcolor"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/venue_features_1_optional"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <EditText
+                        android:id="@+id/venue_feature_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="text"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/venue_features_2_optional"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <EditText
+                        android:id="@+id/venue_feature_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="text"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/venue_features_3_optional"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <EditText
+                        android:id="@+id/venue_feature_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="text"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/venue_features_4_optional"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <EditText
+                        android:id="@+id/venue_feature_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="text"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/venue_features_5_optional"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <EditText
+                        android:id="@+id/venue_feature_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="text"
+                        android:padding="@dimen/_15sdpq"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/will_you_work_with_nuptist_s_recommended_vendor_s"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_edittext8r"
+                    >
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/work_with_nuptist_vendor_group">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/work_with_nuptist_vendor_yes"/>
+
+                        <RadioButton
+                            android:layout_marginStart="@dimen/_10sdpq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:id="@+id/work_with_nuptist_vendor_no"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/can_nuptist_include_venue_for_packages"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/for_packages_venue_group">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/for_packages_venue_yes"/>
+
+                        <RadioButton
+                            android:layout_marginStart="@dimen/_10sdpq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:id="@+id/for_packages_venue_no"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="@string/description"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdpq"
+                        android:layout_marginTop="@dimen/_8sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:fontFamily="@font/product_snas_regular"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_15sdpq"
+                        android:gravity="start"
+                        android:textColor="@color/bold_black"
+                        android:textColorHint="@color/ltextcolor"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/address_selectecd"
+                        android:padding="@dimen/_15sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="Venue Location (Select on Map)"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+
+                    <LinearLayout
+                        android:id="@+id/map_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_marginTop="@dimen/_5sdpq"
+                            android:background="@drawable/shape_edittext8r"                        android:layout_width="match_parent"
+                            android:layout_height="@dimen/_300sdpq"
+                            android:id="@+id/fragment_container"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/upload_cover_photo"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear_image_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:background="@drawable/dot_dot_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdpq">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdpq">
+
+
+                        <ImageView
+                            android:id="@+id/cover_image"
+                            android:layout_width="@dimen/_30sdpq"
+                            android:layout_height="@dimen/_30sdpq"
+                            android:src="@drawable/ic_nature_svg" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_205sdpq"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/_6sdpq"
+                            android:fontFamily="@font/product_snas_regular"
+                            android:text="@string/browse_and_choose_picture_you_want_to_want_to_make_it_cover"
+                            android:textColor="@color/text_regular"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14sdpq" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/brawose_cover_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_6sdpq"
+                        android:layout_marginTop="@dimen/_15sdpq"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/browse_picture"
+                        android:textColor="@color/colorPrimary"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdpq" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_15sdpq"
+                    android:fontFamily="@font/product_snas_bold"
+                    android:text="@string/upload_photo_gallery"
+                    android:textColor="@color/text_regular"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear_image_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:background="@drawable/dot_dot_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdpq">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdpq">
+
+
+                        <ImageView
+                            android:id="@+id/gallery"
+                            android:layout_width="@dimen/_30sdpq"
+                            android:layout_height="@dimen/_30sdpq"
+                            android:src="@drawable/ic_nature_svg" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_205sdpq"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/_6sdpq"
+                            android:fontFamily="@font/product_snas_regular"
+                            android:text="@string/browse_and_choose_picture_you_want_to_want_to_make_it_cover"
+                            android:textColor="@color/text_regular"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14sdpq" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/brawose_user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_6sdpq"
+                        android:layout_marginTop="@dimen/_15sdpq"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/browse_picture"
+                        android:textColor="@color/colorPrimary"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdpq" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/venue_terms_and_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:id="@+id/terms_condition_tv"
+                        android:text="Accept Terms And Conditions"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linear_all_venue_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdpq"
+                    android:background="@drawable/dot_dot_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdpq">
+
+                    <TextView
+                        android:padding="@dimen/_15sdpq"
+                        android:background="@drawable/shape_edittext8r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdpq"
+                        android:fontFamily="@font/product_snas_bold"
+                        android:text="All Venue Images"
+                        android:textColor="@color/text_regular"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14sdpq" />
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/create_venue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_20sdpq"
+                    android:background="@drawable/roundprimary_gb"
+                    android:fontFamily="@font/product_snas_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdpq"
+                    android:text="@string/request_to_approve"
+                    android:textColor="@color/white2"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/_14sdpq" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

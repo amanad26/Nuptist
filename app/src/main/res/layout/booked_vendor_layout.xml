@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_5sdpq"
+        android:layout_marginEnd="@dimen/_5sdpq"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdpq"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_50sdpq"
+            android:layout_height="@dimen/_50sdpq"
+            android:src="@drawable/user"
+            android:id="@+id/notification_image"/>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdpq"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text=""
+                android:textColor="@color/bold_black"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_15sdpq" />
+
+
+            <TextView
+                android:id="@+id/notification_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:maxLines="2"
+                android:textColor="@color/bold_black"
+                android:textFontWeight="400"
+                android:maxLength="150"
+                android:textSize="@dimen/_12sdpq" />
+
+            <TextView
+                android:id="@+id/notification_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/_3sdpq"
+                android:textColor="@color/red"
+                android:textFontWeight="400"
+                android:maxLength="150"
+                android:textSize="@dimen/_11sdpq" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdpq"
+        android:layout_marginTop="@dimen/_5sdpq"
+        android:background="@color/background"/>
+
+</LinearLayout>

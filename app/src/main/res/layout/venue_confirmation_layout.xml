@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_325sdpq"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/dissmiss2"
+        android:layout_width="@dimen/_40sdpq"
+        android:layout_height="@dimen/_40sdpq"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/ic_circleprimary">
+
+
+        <ImageView
+            android:layout_width="@dimen/_11sdpq"
+            android:layout_height="@dimen/_11sdpq"
+            android:src="@drawable/ic_cross_svg"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="@dimen/_125sdpq"
+        android:layout_height="@dimen/_125sdpq"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_approved" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdpq"
+        android:layout_marginTop="@dimen/_20sdpq"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Your Venue During inspection, approval is needed to be able to open this section"
+        android:textColor="@color/bold_black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/_15sdpq" />
+
+
+
+    <LinearLayout
+        android:id="@+id/vendor_profile"
+        android:layout_width="@dimen/_55sdpq"
+        android:layout_height="@dimen/_55sdpq"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/ic_circle"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/set_date"
+            android:layout_width="@dimen/_30sdpq"
+            android:layout_height="@dimen/_30sdpq"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/view_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdpq"
+        android:layout_marginBottom="@dimen/_8sdpq"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/see_privacy_and_police"
+        android:textColor="@color/colorPrimary"
+        android:textFontWeight="400"
+        android:textSize="@dimen/_12sdpq" />
+
+
+
+</LinearLayout>
